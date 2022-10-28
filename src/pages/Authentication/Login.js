@@ -29,7 +29,7 @@ const Login = props => {
 
   // handleValidSubmit
   const handleValidSubmit = (event, values) => {
-    console.log(values);
+    console.log(values)
     dispatch(loginUser(values, history))
   }
 
@@ -83,16 +83,16 @@ const Login = props => {
                         handleValidSubmit(e, v)
                       }}
                     >
-                      {error ? <Alert color="danger">{error}</Alert> : null}
+                      {/* {error ? <Alert color="danger">{error}</Alert> : null} */}
 
                       <div className="mb-3">
                         <AvField
                           name="email"
                           label="Email"
-                          value="admin@themesbrand.com"
+                          value="admin"
                           className="form-control"
                           placeholder="Enter email"
-                          type="email"
+                          type="text"
                           required
                         />
                       </div>
@@ -101,7 +101,7 @@ const Login = props => {
                         <AvField
                           name="password"
                           label="Password"
-                          value="123456"
+                          value="admin"
                           type="password"
                           required
                           placeholder="Enter Password"

@@ -7,11 +7,13 @@ import {
   SOCIAL_LOGIN,
 } from "./actionTypes"
 
-export const loginUser = (user, history) => (console.log(user),{
+export const loginUser = (user, history) => (
+  console.log(user),
+  {
     type: LOGIN_USER,
     payload: { user, history },
-})
-
+  }
+)
 
 export const loginSuccess = user => {
   return {
